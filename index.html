@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-locked">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A &amp; R — To‘y Taklifnomasi</title>
+<meta name="description" content="Bizning eng go‘zal kunimizga chin qalbdan taklif qilamiz.">
+<meta name="theme-color" content="#3E4536">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="scroll-locked">
+
+<!-- ============================================================
+     SVG SPRITE — monogram, botanical ornaments, icons
+     ============================================================ -->
+<svg class="svg-defs" aria-hidden="true" focusable="false">
+<defs>
+  <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#BF953F"/>
+    <stop offset="25%" stop-color="#FCF6BA"/>
+    <stop offset="50%" stop-color="#B38728"/>
+    <stop offset="75%" stop-color="#FBF5B7"/>
+    <stop offset="100%" stop-color="#AA771C"/>
+  </linearGradient>
+
+  <radialGradient id="waxGrad" cx="35%" cy="28%" r="80%">
+    <stop offset="0%" stop-color="#FCF6BA"/>
+    <stop offset="30%" stop-color="#D8B667"/>
+    <stop offset="65%" stop-color="#A9812F"/>
+    <stop offset="100%" stop-color="#6E5323"/>
+  </radialGradient>
+
+  <pattern id="lacePattern" width="14" height="14" patternUnits="userSpaceOnUse">
+    <circle cx="7" cy="7" r="1.1" fill="#C5A059" opacity="0.3"/>
+  </pattern>
+
+  <!-- single stylised petal / blossom -->
+  <symbol id="icon-petal" viewBox="0 0 100 100">
+    <path d="M50,54 C45,36 40,18 50,3 C60,18 55,36 50,54 Z" fill="#FFFFFF" stroke="#E9E2D2" stroke-width="0.6"/>
+  </symbol>
+
+  <symbol id="icon-lily" viewBox="0 0 100 100">
+    <use href="#icon-petal"/>
+    <use href="#icon-petal" transform="rotate(60 50 50)"/>
+    <use href="#icon-petal" transform="rotate(120 50 50)"/>
+    <use href="#icon-petal" transform="rotate(180 50 50)"/>
+    <use href="#icon-petal" transform="rotate(240 50 50)"/>
+    <use href="#icon-petal" transform="rotate(300 50 50)"/>
+    <circle cx="50" cy="50" r="6" fill="#C5A059"/>
+    <circle cx="50" cy="50" r="2.4" fill="#9E2A2B" opacity="0.55"/>
+  </symbol>
+
+  <symbol id="icon-lily-cluster" viewBox="0 0 300 460">
+    <path d="M150,460 C138,380 162,300 128,220" fill="none" stroke="#8A9078" stroke-width="2"/>
+    <path d="M150,460 C162,398 144,330 172,258" fill="none" stroke="#8A9078" stroke-width="1.6"/>
+    <path d="M140,340 C108,330 88,352 78,382 C110,382 132,364 140,340 Z" fill="#5B6350" opacity="0.85"/>
+    <path d="M166,300 C198,288 218,304 228,330 C196,336 176,320 166,300 Z" fill="#69705F" opacity="0.85"/>
+    <path d="M120,240 C96,250 86,270 88,292 C112,286 124,266 120,240 Z" fill="#5B6350" opacity="0.7"/>
+    <use href="#icon-lily" x="26" y="0" width="150" height="150"/>
+    <use href="#icon-lily" x="132" y="64" width="112" height="112"/>
+    <use href="#icon-lily" x="56" y="156" width="94" height="94"/>
+  </symbol>
+
+  <symbol id="icon-gold-branch" viewBox="0 0 200 200">
+    <path d="M8,192 C58,150 38,90 100,60 C140,40 160,20 192,8" fill="none" stroke="url(#goldGrad)" stroke-width="1.4"/>
+    <path d="M60,140 C50,125 55,110 70,105 C72,122 68,135 60,140 Z" fill="url(#goldGrad)" opacity="0.85"/>
+    <path d="M100,80 C95,63 105,50 122,48 C120,65 112,76 100,80 Z" fill="url(#goldGrad)" opacity="0.85"/>
+    <path d="M150,35 C143,22 150,12 163,10 C164,24 158,33 150,35 Z" fill="url(#goldGrad)" opacity="0.8"/>
+    <circle cx="150" cy="35" r="2.6" fill="#C5A059"/>
+    <circle cx="130" cy="55" r="2" fill="#C5A059"/>
+    <circle cx="80" cy="115" r="2.2" fill="#C5A059"/>
+    <circle cx="42" cy="170" r="1.8" fill="#C5A059"/>
+  </symbol>
+
+  <symbol id="icon-floral-corner" viewBox="0 0 180 180">
+    <path d="M172,8 C120,18 80,38 40,78 C20,98 10,138 10,170" fill="none" stroke="#8A9078" stroke-width="1.4"/>
+    <use href="#icon-lily" x="8" y="88" width="72" height="72"/>
+    <use href="#icon-lily" x="70" y="38" width="56" height="56"/>
+    <path d="M42,140 C27,130 15,140 10,155 C25,158 38,150 42,140 Z" fill="#5B6350" opacity="0.8"/>
+  </symbol>
+
+  <symbol id="icon-monogram" viewBox="0 0 220 220">
+    <circle cx="110" cy="110" r="102" fill="none" stroke="url(#goldGrad)" stroke-width="1.4"/>
+    <circle cx="110" cy="110" r="93" fill="none" stroke="url(#goldGrad)" stroke-width="0.7"/>
+    <path d="M68,52 Q110,36 152,52" fill="none" stroke="url(#goldGrad)" stroke-width="1.1"/>
+    <path d="M68,168 Q110,184 152,168" fill="none" stroke="url(#goldGrad)" stroke-width="1.1"/>
+    <circle cx="68" cy="52" r="2" fill="#C5A059"/>
+    <circle cx="152" cy="52" r="2" fill="#C5A059"/>
+    <circle cx="68" cy="168" r="2" fill="#C5A059"/>
+    <circle cx="152" cy="168" r="2" fill="#C5A059"/>
+    <text x="96" y="132" font-family="'Cormorant Garamond', serif" font-size="68" font-weight="600" fill="url(#goldGrad)" text-anchor="end">A</text>
+    <text x="110" y="145" font-family="'Great Vibes', cursive" font-size="28" fill="url(#goldGrad)" text-anchor="middle">&amp;</text>
+    <text x="124" y="132" font-family="'Cormorant Garamond', serif" font-size="68" font-weight="600" fill="url(#goldGrad)" text-anchor="start">R</text>
+  </symbol>
+
+  <symbol id="icon-swan" viewBox="0 0 140 110">
+    <path d="M8,100 C8,68 30,38 60,34 C54,24 60,14 70,11 C78,9 86,13 88,21 C92,19 96,21 96,26 C96,31 90,33 86,31 C90,44 80,54 65,54 C76,64 92,69 112,66 C90,84 58,88 38,79 C24,95 14,100 8,100 Z" fill="#3E4536" opacity="0.12"/>
+  </symbol>
+
+  <symbol id="icon-welcome" viewBox="0 0 64 64">
+    <path d="M14,50 V26 C14,16 22,10 32,10 C42,10 50,16 50,26 V50" fill="none" stroke="#C5A059" stroke-width="1.6"/>
+    <line x1="9" y1="50" x2="55" y2="50" stroke="#C5A059" stroke-width="1.6"/>
+    <path d="M26,50 V35 C26,31 29,28 32,28 C35,28 38,31 38,35 V50" fill="none" stroke="#C5A059" stroke-width="1.3"/>
+    <circle cx="32" cy="19" r="1.6" fill="#C5A059"/>
+  </symbol>
+
+  <symbol id="icon-ceremony" viewBox="0 0 64 64">
+    <circle cx="25" cy="38" r="13" fill="none" stroke="#C5A059" stroke-width="1.6"/>
+    <circle cx="39" cy="38" r="13" fill="none" stroke="#C5A059" stroke-width="1.6"/>
+    <path d="M39,20 L42,14 L45,20 L42,26 Z" fill="#C5A059" opacity="0.85"/>
+  </symbol>
+
+  <symbol id="icon-arrow" viewBox="0 0 24 24">
+    <path d="M5,12 H19 M13,6 L19,12 L13,18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-music" viewBox="0 0 24 24">
+    <path d="M9,18 V6 L20,4 V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="6.5" cy="18" r="2.5" fill="currentColor"/>
+    <circle cx="17.5" cy="16" r="2.5" fill="currentColor"/>
+  </symbol>
+</defs>
+</svg>
+
+<!-- ambient particle canvas -->
+<canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+<!-- dedicated canvas for the confetti rain effect (isolated from burst confetti) -->
+<canvas id="confettiRainCanvas" class="confetti-rain-canvas" aria-hidden="true"></canvas>
+
+<!-- ============================================================
+     HERO — closed envelope
+     ============================================================ -->
+<section id="hero" class="hero" aria-label="Taklifnoma ochish sahifasi">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="paper-grain"></div>
+    <div class="hero__vignette"></div>
+    <div class="hero__gold-bloom" id="heroGoldBloom"></div>
+  </div>
+
+  <svg class="ornament ornament--top-left" aria-hidden="true"><use href="#icon-gold-branch"/></svg>
+  <svg class="ornament ornament--top-right" aria-hidden="true"><use href="#icon-gold-branch"/></svg>
+  <svg class="ornament ornament--bottom-left" aria-hidden="true"><use href="#icon-floral-corner"/></svg>
+  <svg class="ornament ornament--bottom-right" aria-hidden="true"><use href="#icon-floral-corner"/></svg>
+
+  <svg class="lily lily--left" aria-hidden="true"><use href="#icon-lily-cluster"/></svg>
+  <svg class="lily lily--right" aria-hidden="true"><use href="#icon-lily-cluster"/></svg>
+
+  <div class="hero__content" id="heroContent">
+    <p class="label">To‘y Taklifnomasi</p>
+
+    <div class="envelope-stage">
+      <div class="envelope" id="envelope">
+        <div class="envelope__shadow" aria-hidden="true"></div>
+
+        <div class="envelope__clip">
+          <div class="envelope__card" id="envelopeCard">
+            <div class="envelope__card-inner">
+              <svg class="envelope__card-watermark" aria-hidden="true"><use href="#icon-monogram"/></svg>
+              <p class="envelope__card-label">A &amp; R</p>
+            </div>
+          </div>
+
+          <div class="envelope__pocket" aria-hidden="true"></div>
+
+          <div class="envelope__flap" id="envelopeFlap" aria-hidden="true">
+            <span class="envelope__flap-shine"></span>
+          </div>
+        </div>
+
+        <button class="wax-seal" id="waxSeal" type="button" aria-label="Taklifnomani ochish">
+          <span class="wax-seal__glow" aria-hidden="true"></span>
+          <span class="wax-seal__base">
+            <svg viewBox="0 0 220 220" class="wax-seal__monogram" aria-hidden="true"><use href="#icon-monogram"/></svg>
+          </span>
+          <span class="wax-seal__crack wax-seal__crack--1" aria-hidden="true"></span>
+          <span class="wax-seal__crack wax-seal__crack--2" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <p class="hero__subtext">Bizning baxtimizga sherik bo‘ling</p>
+    <p class="hero__instruction">Taklifnomani ochish uchun muhrga teging</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     MAIN CONTENT — hidden until envelope opens
+     ============================================================ -->
+<main id="mainContent" class="main-content">
+
+<!-- SECTION 2 — MAIN INVITATION -->
+<section id="invitation" class="invitation" aria-label="Asosiy taklifnoma">
+  <div class="invitation__texture" aria-hidden="true"></div>
+  <div class="invitation__glow" aria-hidden="true"></div>
+
+  <svg class="ornament ornament--branch-left" aria-hidden="true"><use href="#icon-gold-branch"/></svg>
+  <svg class="ornament ornament--branch-right" aria-hidden="true"><use href="#icon-gold-branch"/></svg>
+
+  <div class="invitation__card reveal-card">
+    <div class="invitation__frame">
+      <svg class="invitation__corner invitation__corner--tl" aria-hidden="true"><use href="#icon-floral-corner"/></svg>
+      <svg class="invitation__corner invitation__corner--tr" aria-hidden="true"><use href="#icon-floral-corner"/></svg>
+      <svg class="invitation__corner invitation__corner--bl" aria-hidden="true"><use href="#icon-floral-corner"/></svg>
+      <svg class="invitation__corner invitation__corner--br" aria-hidden="true"><use href="#icon-floral-corner"/></svg>
+
+      <p class="invitation__greeting reveal-el">Assalomu alaykum</p>
+      <p class="label reveal-el">Aziz mehmonimiz</p>
+      <p class="invitation__body reveal-el">Sizni 8-avgust kuni bo‘lib o‘tadigan nikoh to‘yimiz munosabati bilan, samimiy muhabbat va hurmat ila tashkil etilgan tantanali nahorgi nonushtamizga taklif etamiz.</p>
+
+      <svg class="invitation__monogram reveal-el" aria-hidden="true"><use href="#icon-monogram"/></svg>
+
+      <p class="invitation__script reveal-el">Bir umrga birga&hellip;</p>
+      <p class="invitation__closing reveal-el">Baxtimizga sherik bo‘ling.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 — DATE -->
+<section id="date" class="date-section" aria-label="Sana">
+  <svg class="ornament ornament--date-branch" aria-hidden="true"><use href="#icon-gold-branch"/></svg>
+
+  <div class="date-envelope-wrap reveal-card">
+    <div class="date-envelope">
+      <div class="date-envelope__back" aria-hidden="true"></div>
+      <div class="date-envelope__flap" aria-hidden="true">
+        <svg class="date-envelope__flap-monogram" aria-hidden="true"><use href="#icon-monogram"/></svg>
+      </div>
+
+      <div class="date-calendar" id="dateCalendar">
+        <p class="label">Eng go‘zal kunimiz</p>
+
+        <div class="date-calendar__month-year">
+          <span class="date-calendar__month">Avgust</span>
+          <span class="date-calendar__year">2026</span>
+        </div>
+
+        <div class="date-calendar__day-wrap">
+          <span class="date-calendar__day-circle" aria-hidden="true"></span>
+          <span class="date-calendar__day">8</span>
+          <svg class="date-calendar__heart" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12,21 C7,16.5 3,12.8 3,8.7 C3,5.9 5.2,4 7.7,4 C9.4,4 10.9,4.9 12,6.4 C13.1,4.9 14.6,4 16.3,4 C18.8,4 21,5.9 21,8.7 C21,12.8 17,16.5 12,21 Z" fill="#9E2A2B"/>
+          </svg>
+        </div>
+
+        <p class="date-calendar__copy">Hayotimizdagi yangi sahifa boshlanadigan kunni siz bilan birga nishonlashdan mamnun bo‘lamiz.</p>
+        <p class="date-calendar__full-date">8 Avgust 2026</p>
+        <p class="date-calendar__weekday">Shanba</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 — RESTAURANT / LOCATION -->
+<section id="location" class="location" aria-label="To‘y manzili">
+  <div class="section-heading reveal-el">
+    <p class="label">To‘yimiz manzili</p>
+    <h2 class="section-heading__title">Bizni kutayotgan go‘zal kun</h2>
+  </div>
+
+  <div class="location__card reveal-card">
+    <div class="location__info">
+      <h3 class="location__venue">Osh shahri</h3>
+      <p class="location__address">Sharq (Kalinin kolxoz), Turkmenov ko‘chasi 48</p>
+      <p class="location__arrival">Mehmonlarni kutib olish — <span id="arrivalTime">06:00</span></p>
+      <a href="#" id="mapButton" class="map-button" target="_blank" rel="noopener noreferrer">
+        <span>Xaritada ko‘rish</span>
+        <svg class="map-button__icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 — WEDDING MORNING PROGRAM -->
+<section id="program" class="program" aria-label="To‘y dasturi">
+  <div class="section-heading reveal-el">
+    <p class="label">To‘yimiz dasturi</p>
+    <h2 class="section-heading__title">Ushbu go‘zal kunni birgalikda o‘tkazamiz</h2>
+  </div>
+
+  <div class="timeline" id="timeline">
+    <div class="timeline__line" id="timelineLine" aria-hidden="true">
+      <span class="timeline__line-fill"></span>
+    </div>
+    <!-- schedule items injected by main.js from weddingConfig.schedule -->
+  </div>
+</section>
+
+<!-- SECTION 6 — COUNTDOWN -->
+<section id="countdown" class="countdown" aria-label="To‘yga sanoq">
+  <svg class="ornament ornament--countdown" aria-hidden="true"><use href="#icon-gold-branch"/></svg>
+
+  <p class="label label--on-dark">To‘yimizga sanoqli kunlar&hellip;</p>
+  <h2 class="countdown__romantic">Biz sizni intiqlik bilan kutamiz</h2>
+
+  <div class="countdown__grid">
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cdDays">00</span>
+      <span class="countdown__label">Kun</span>
+    </div>
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cdHours">00</span>
+      <span class="countdown__label">Soat</span>
+    </div>
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cdMinutes">00</span>
+      <span class="countdown__label">Daqiqa</span>
+    </div>
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cdSeconds">00</span>
+      <span class="countdown__label">Soniya</span>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7 — FINAL LACE HEART + FINAL SEAL -->
+<section id="finale" class="finale" aria-label="Yakuniy tabrik">
+  <svg class="swan swan--left" aria-hidden="true"><use href="#icon-swan"/></svg>
+  <svg class="swan swan--right" aria-hidden="true"><use href="#icon-swan"/></svg>
+
+  <footer class="site-footer">
+    <svg class="site-footer__monogram" aria-hidden="true"><use href="#icon-monogram"/></svg>
+  </footer>
+</section>
+
+</main>
+
+<!-- ============================================================
+     AUDIO PLAYER
+     ============================================================ -->
+<button class="audio-toggle" id="audioToggle" type="button" aria-label="Musiqani yoqish" aria-pressed="false">
+  <span class="audio-toggle__waves" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </span>
+  <svg class="audio-toggle__icon" aria-hidden="true"><use href="#icon-music"/></svg>
+</button>
+<audio id="bgAudio" loop preload="none">
+  <source src="assets/wedding-music.m4a" type="audio/mp4">
+</audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 /* ============================================================
-   A & R — LUXURY WEDDING INVITATION — main.js
+   А & М — LUXURY WEDDING INVITATION — main.js
    ============================================================ */
 
 (function () {
@@ -10,36 +10,36 @@
      ========================================================== */
 
   const weddingConfig = {
-    initials: "A & R",
+    initials: "А & М",
 
-    date: "8",
-    month: "AVGUST",
+    date: "21",
+    month: "NOYABR",
     year: "2026",
     weekday: "Shanba",
 
-    weddingDate: "2026-08-08T14:00:00",
+    weddingDate: "2026-11-21T10:00:00",
 
-    venue: "OSH SHAHRI",
-    address: "Sharq (Kalinin kolxoz), Turkmenov ko‘chasi 48",
-    guestArrival: "06:00",
+    venue: "КАВСАР МАГАЗИНИ",
+    address: "Жумабай Шакиров кўчаси, 21-уй",
+    guestArrival: "10:00",
 
-    mapUrl: "https://2gis.kg/bishkek/geo/70030076158595624/72.822290,40.551714",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=%D0%96%D1%83%D0%BC%D0%B0%D0%B1%D0%B0%D0%B9%20%D0%A8%D0%B0%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%20%D0%BA%D1%9E%D1%87%D0%B0%D1%81%D0%B8%2C%2021-%D1%83%D0%B9%2C%20%D0%9A%D0%B0%D0%B2%D1%81%D0%B0%D1%80%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B8",
 
     music: "assets/wedding-music.m4a",
 
     schedule: [
       {
-        time: "06:00",
-        title: "Mehmonlarni kutib olish",
+        time: "Bomdoddan keyin",
+        title: "Erkaklar yig‘ilishi",
         description:
-          "Aziz mehmonlarimizni iliq kulgu va samimiy so‘zlar bilan kutib olamiz.",
+          "Erkak mehmonlarimiz bomdod namozidan keyin tashrif buyurishlari mumkin.",
         icon: "welcome",
       },
       {
-        time: "14:00",
-        title: "To‘y marosimi boshlanishi",
+        time: "10:00",
+        title: "Ayollar yig‘ilishi",
         description:
-          "Bayramona kayfiyatda to‘y marosimimiz boshlanadi, barchani birga nishonlashga kutamiz.",
+          "Ayol mehmonlarimizni soat 10:00 da intiqlik bilan kutamiz.",
         icon: "ceremony",
       },
     ],
